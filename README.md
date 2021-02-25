@@ -2,6 +2,12 @@
 
 based on Spring-boot framework
 
+## Requirements
+
+- GIT
+- JAVA 11 or greater
+- MAVEN
+
 ## Build & Run
 
 1. cd into project directory

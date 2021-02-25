@@ -29,32 +29,13 @@ public class HomeController {
 		return 
 			"<h1>" + description + "</h1>"
 			+"<ul>"
-			+	"<li>Problema 1: <a href='integer_square_root/'>Radice quadrata di un intero</a></li>"
-			+	"<li>Problema 2: todo</li>"
+			+	"<li>Problema 1: <a href='integer_square_root.html'>Radice quadrata di un intero</a></li>"
+			+	"<li>Problema 2: <a href='parents_and_children.html'>Genitori e figli</a></li>"
 			+	"<li>Problema 3: todo</li>"
 			+"</ul>"
 			//version 
 			//+"jre version " + java + "." + " API browser available <a href='swagger-ui/'>here</a>"
 			;
 	}
-
-	@RequestMapping("/integer_square_root")
-	@ResponseBody
-	public String integerSquareRoot() {
-		return "<pre>"
-			+ "<h1>Problema:</h1>"
-			+	"<h3>Dato un intero x non negativo, trovare la radice quadrata intera y tale che y*y = x.</h3>"
-			+ "<h3>Nel caso in cui y non fosse intero se ne consideri la sola parte intera.</h3>"
-			//+ "Esempio x:4 y:2"
-			+ "<br><br><br>"
-			+ "<h2>Implementazione:</h2>"
-			+ "Modificare il metodo <i>integerSquareRoot</i> della classe <b>it.ott8bre.sandbox.controllers.ApiController</b>"
-			+ "<br><br><br>"
-			+ "<h2>Test:</h2>"
-			+ "<a href='/swagger-ui/#/api-controller/integerSquareRootUsingGET'>swagger-ui</a>"
-			+"</pre>"
-			;
-	}
-
 
 }

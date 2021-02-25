@@ -1,13 +1,32 @@
-DROP TABLE IF EXISTS billionaires;
+DROP TABLE IF EXISTS parents;
 
-CREATE TABLE billionaires (
+CREATE TABLE parents (
   id INT AUTO_INCREMENT  PRIMARY KEY,
-  first_name VARCHAR(250) NOT NULL,
-  last_name VARCHAR(250) NOT NULL,
-  career VARCHAR(250) DEFAULT NULL
+  name VARCHAR(250) NOT NULL,
+  age INT NOT NULL
 );
 
-INSERT INTO billionaires (first_name, last_name, career) VALUES
-  ('Aliko', 'Dangote', 'Billionaire Industrialist'),
-  ('Bill', 'Gates', 'Billionaire Tech Entrepreneur'),
-  ('Folrunsho', 'Alakija', 'Billionaire Oil Magnate');
+INSERT INTO parents (id, name, age) VALUES
+  (1, 'Mario', 27),
+  (2, 'Carlo', 43),
+  (3, 'Luisa', 39),
+  (4, 'Adele', 28),
+  (5, 'Bruno', 32);
+
+
+DROP TABLE IF EXISTS children;
+
+CREATE TABLE children (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(250) NOT NULL,
+  parent_id INT NOT NULL
+);
+
+INSERT INTO children (name, parent_id) VALUES
+  ('Luca', 3),
+  ('Sara', 3),
+  ('Gino', 4),
+  ('Lara', 4),
+  ('Remo', 1),
+  ('Mina', 1),
+  ('Vito', 5);
