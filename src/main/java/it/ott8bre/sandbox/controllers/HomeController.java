@@ -31,7 +31,7 @@ public class HomeController {
 			+"<ul>"
 			+	"<li>Problema 1: <a href='integer_square_root.html'>Radice quadrata di un intero</a></li>"
 			+	"<li>Problema 2: <a href='parents_and_children.html'>Genitori e figli</a></li>"
-			+	"<li>Problema 3: todo</li>"
+			+	"<li>Problema 3: <a href='geometric_shapes.html'>Figure geometriche</a></li>"
 			+"</ul>"
 			//version 
 			//+"jre version " + java + "." + " API browser available <a href='swagger-ui/'>here</a>"
