@@ -26,13 +26,27 @@ public class HomeController {
 	@ResponseBody
 	public String home() {
 		
-		return 
-			"<h1>" + description + "</h1>"
+		return "<!DOCTYPE html>"
+			+"<html>"
+			+"<head>"
+			+"<title>" + description + "</title>"
+			+"<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>"
+			+"<style>"
+			+"body { font-family: 'Roboto', sans-serif; }"
+			+"</style>"
+			+"</head>"
+			+"<body>"
+
+			+"<h1>" + description + "</h1>"
 			+"<ul>"
 			+	"<li>Problema 1: <a href='integer_square_root.html'>Radice quadrata di un intero</a></li>"
 			+	"<li>Problema 2: <a href='parents_and_children.html'>Genitori e figli</a></li>"
 			+	"<li>Problema 3: <a href='geometric_shapes.html'>Figure geometriche</a></li>"
 			+"</ul>"
+
+			+"</body>"
+			+"</html>"
+
 			//version 
 			//+"jre version " + java + "." + " API browser available <a href='swagger-ui/'>here</a>"
 			;
